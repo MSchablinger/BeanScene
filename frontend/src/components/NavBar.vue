@@ -15,12 +15,13 @@ export default {
 <style>
 nav {
   display: flex;
-  height: 88px;
+  height: 10%;
   background-color: #45170C;
   justify-content: flex-end;
   width: 100%;
   color: #ffffff;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+  font-size: 3rem;
 }
 nav * {
   height: 100%;
@@ -32,7 +33,6 @@ img {
 a {
   color:#ffffff;
   text-decoration: none;
-  font-size: 50px;
   padding-right: 1%;
   padding-left: 1%;
   text-align: center;
@@ -46,7 +46,7 @@ a:hover img:hover {
 }
 h1 {
   font-family: "Edwardian Script ITC 2";
-  font-size: 70px;
+  font-size: 5rem;
   margin: 0 auto 0 0 ;
 }
 

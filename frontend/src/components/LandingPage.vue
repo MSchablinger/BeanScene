@@ -1,8 +1,5 @@
 <template>
-<main>
-  <HomeNews>
-  </HomeNews>
-</main>
+  <HomeNews id="homenews"></HomeNews>
 </template>
 
 <script>
@@ -16,8 +13,5 @@ export default {
 </script>
 
 <style scoped>
-main {
-  background-color: #F3E5BC;
-  scroll-behavior: smooth;
-}
+
 </style>

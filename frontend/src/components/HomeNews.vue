@@ -16,20 +16,16 @@ export default {
 </script>
 
 <style scoped>
-main:nth-child(0) {
-  position: absolute;
-  width: 667px;
-  height: 80%;
-  left: 2%;
-  top: 123px;
-
-  background: rgba(51, 8, 4, 0.8);
-}
-main:nth-child(1) {
-  position: absolute;
-  width: 703px;
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". .";
+  width: 1360px;
   height: 872px;
-  left: 696px;
+  left: 39px;
   top: 123px;
 }
+
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <NavBar></NavBar>
-  <LandingPage></LandingPage>
+  <NavBar id="navbar"></NavBar>
+  <LandingPage id="landingpage"></LandingPage>
 </template>
 
 <script>
@@ -17,7 +17,14 @@ export default {
 </script>
 
 <style>
-NavBar {
+#navbar {
   position: fixed;
+}
+#landingpage {
+  top: 10%;
+  background-color: #F3E5BC;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 </style>
