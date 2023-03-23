@@ -12,10 +12,9 @@ export default {
   name: 'NavBar'
 }
 </script>
-<style>
+<style scoped>
 nav {
   display: flex;
-  height: 10%;
   background-color: #45170C;
   justify-content: flex-end;
   width: 100%;

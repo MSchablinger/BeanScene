@@ -1,13 +1,33 @@
 <template>
-
+<main>
+  <ProductListItem name="Ethiopian Espresso" price=30 path="@/assets/bag.jpg"></ProductListItem>
+  <ProductListItem name="Brazilian Premium Espresso" price=50 path="@/assets/bag.jpg"></ProductListItem>
+  <ProductListItem name="Jamaican Espresso" price=32 path="@/assets/bag.jpg"></ProductListItem>
+</main>
 </template>
 
 <script>
+import ProductListItem from "@/components/ProductListItem.vue";
 export default {
-  name: "ShopWidget"
+  name: "ShopWidget",
+  components: {
+    ProductListItem
+  }
 }
 </script>
 
 <style scoped>
-
+main {
+  background-color: rgba(51, 8, 4, 0.8);;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-areas:
+  ". . ."
+  ". . .";
+  width: 90%;
+  height: 12%;
+  color:#fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
 </style>
