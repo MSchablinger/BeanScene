@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div :style="image"></div>
+  <img :src="'http://localhost/BeanScene/backend/api.php?image='+path" alt="">
   <h1>{{ name }}</h1>
   <h2>{{ price }} €/kg</h2>
 </div>
@@ -13,11 +13,6 @@ export default {
     name: String,
     price: Number,
     path: String
-  },
-  data() {
-    return {
-      image: {backgroundImage: 'url(' + this.path + ')'}
-    };
   }
 }
 </script>
@@ -30,6 +25,8 @@ div {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
 img {
-
+  margin-top: 5%;
+  width:80%;
+  height:auto;
 }
 </style>

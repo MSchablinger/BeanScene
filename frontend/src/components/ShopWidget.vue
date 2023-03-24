@@ -1,8 +1,8 @@
 <template>
 <main>
-  <ProductListItem name="Ethiopian Espresso" price=30 path="@/assets/bag.jpg"></ProductListItem>
-  <ProductListItem name="Brazilian Premium Espresso" price=50 path="@/assets/bag.jpg"></ProductListItem>
-  <ProductListItem name="Jamaican Espresso" price=32 path="@/assets/bag.jpg"></ProductListItem>
+  <ProductListItem name="Ethiopian Espresso" price=30 path="bag.jpg"></ProductListItem>
+  <ProductListItem name="Brazilian Premium Espresso" price=50 path="bag.jpg"></ProductListItem>
+  <ProductListItem name="Jamaican Espresso" price=32 path="bag.jpg"></ProductListItem>
 </main>
 </template>
 
@@ -24,10 +24,12 @@ main {
   grid-template-areas:
   ". . ."
   ". . .";
-  width: 90%;
+  width: 88%;
   height: 12%;
   color:#fff;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  padding-top: 2%;
+  padding-left: 2%;
 }
 </style>
