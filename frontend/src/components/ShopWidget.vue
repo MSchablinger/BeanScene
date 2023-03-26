@@ -24,12 +24,13 @@ main {
   grid-template-areas:
   ". . ."
   ". . .";
-  width: 88%;
+  width: 85%;
   height: 12%;
   color:#fff;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  padding-top: 2%;
-  padding-left: 2%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
 }
 </style>

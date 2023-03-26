@@ -30,11 +30,16 @@ export default {
 #home-news {
   height: 90%;
 }
+#shop-widget {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
 #wrapper {
   background-color: #F3E5BC;
   height: 100%;
   padding-left: 10%;
-  padding-top: 6%;
+  padding-top: 7%;
+  scroll-behavior: smooth;
 }
 main {
   height: 100%;
