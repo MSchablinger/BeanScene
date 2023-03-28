@@ -40,6 +40,7 @@ export default {
   padding-left: 10%;
   padding-top: 7%;
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 main {
   height: 100%;

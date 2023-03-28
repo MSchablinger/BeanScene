@@ -1,10 +1,14 @@
 <template>
   <nav>
-    <img src="../assets/Logo.png" alt="Logo">
-    <h1>Bean Scene</h1>
-    <a href="">Shop</a>
-    <a href="">Merch</a>
-    <a href=""><img src="../assets/shopping_cart.svg" alt="basket" height="54px" width="auto"></a>
+    <img src="@/assets/Logo.png" alt="Logo">
+    <router-link to="/" id="home">
+      <h1 >Bean Scene</h1>
+    </router-link>
+    <router-link to="/shop" class="nav-button">
+      <a href="">Shop</a>
+    </router-link>
+    <a href="" class="nav-button">Merch</a>
+    <a href="" class="nav-button"><img src="@/assets/shopping_cart.svg" alt="basket" height="54px" width="auto"></a>
   </nav>
 </template>
 <script>
@@ -32,21 +36,26 @@ img {
 a {
   color:#ffffff;
   text-decoration: none;
+}
+.nav-button {
   padding-right: 1%;
   padding-left: 1%;
   text-align: center;
 }
-a:hover {
+.nav-button:hover {
   background-color: #f6ecc3;
   color: #130100;
 }
-a:hover img:hover {
+.nav-button:hover img:hover {
   filter: invert(1);
 }
-h1 {
+#home {
   font-family: "Edwardian Script ITC 2";
-  font-size: 5rem;
-  margin: 0 auto 0 0 ;
+  font-size: 3.8rem;
+  margin: 0 auto 0 0;
+}
+h1 {
+  margin: 0;
 }
 
 </style>

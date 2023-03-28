@@ -1,5 +1,5 @@
 <?php
-$name = $_GET['image'];
+$name = $_GET['path'];
 $fp = fopen($name, 'rb');
 
 // send the right headers
