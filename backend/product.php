@@ -6,13 +6,19 @@ header('Content-Type: application/json');
 // $data = $statement->fetchAll(PDO::FETCH_ASSOC);
 header("Access-Control-Allow-Origin: *");
 
-$data = '"products": [
+$data = '{"products": [
 {
-id: 1,
-name: "Ethiopian Espresso",
-price: 30,
-path: "bag.jpg"
+"id": 1,
+"name": "Ethiopian Espresso",
+"price": 30,
+"path": "bag.jpg"
+},
+{
+"id": 2,
+"name": "Brazilian Premium Espresso",
+"price": 50,
+"path": "bag.jpg"
 }
-]';
-echo json_encode($data);
+]}';
+echo $data;
 ?>

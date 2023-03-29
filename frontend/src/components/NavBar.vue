@@ -5,7 +5,7 @@
       <h1 >Bean Scene</h1>
     </router-link>
     <router-link to="/shop" class="nav-button">
-      <a href="">Shop</a>
+      Shop
     </router-link>
     <a href="" class="nav-button">Merch</a>
     <a href="" class="nav-button"><img src="@/assets/shopping_cart.svg" alt="basket" height="54px" width="auto"></a>
@@ -25,6 +25,8 @@ nav {
   color: #ffffff;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
   font-size: 3rem;
+  height: 10%;
+  position: fixed;
 }
 nav * {
   height: 100%;

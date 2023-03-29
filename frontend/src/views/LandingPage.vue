@@ -1,6 +1,6 @@
 <template>
   <main>
-    <NavBar id="nav-bar"/>
+    <NavBar/>
     <div id="wrapper">
       <HomeNews id="home-news"/>
       <ShopWidget id="shop-widget"/>
@@ -23,16 +23,14 @@ export default {
 }
 </script>
 <style scoped>
-#nav-bar {
-  height: 10%;
-  position: fixed;
-}
 #home-news {
   height: 90%;
+  scroll-snap-align: center;
 }
 #shop-widget {
   margin-top: 5%;
   margin-bottom: 10%;
+  scroll-snap-align: center;
 }
 #wrapper {
   background-color: #F3E5BC;
@@ -41,6 +39,7 @@ export default {
   padding-top: 7%;
   scroll-behavior: smooth;
   overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 main {
   height: 100%;

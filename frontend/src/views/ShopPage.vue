@@ -7,26 +7,25 @@
 <script>
 import NavBar from "@/components/NavBar.vue";
 import ProductListItem from "@/components/ProductListItem.vue";
-import { reactive, onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 export default {
   name: 'ShopPage',
   components: {NavBar, ProductListItem},
   setup() {
-    const state = reactive({
-      products: []
-    })
+    const products = ref([])
+    const ip = self.location.hostname;
 
     onMounted(() => {
-      fetch('http://localhost/BeanScene/backend/product.php')
+      fetch('http://' + ip + '/BeanScene/backend/product.php')
           .then(response => response.json())
           .then(data => {
-            state.products = data.products
+            products.value = data.products
           })
     })
 
     return {
-      products: state.products
+      products
     }
   }
 }
@@ -38,6 +37,9 @@ div {
   scroll-behavior: smooth;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 0);
+  grid-template-columns: repeat(3, 28%);
+  background-color: #f6ecc3;
+  padding-left: 2%;
+  padding-top: 7%;
 }
 </style>
