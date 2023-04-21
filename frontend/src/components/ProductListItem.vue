@@ -1,6 +1,6 @@
 <template>
 <router-link to="/detail">
-  <img :src="'http://'+ip+'/BeanScene/backend/img.php?path=' + path" alt="">
+  <img :src="'http://'+ip+'/BeanScene/backend/' + path" alt="">
   <h1>{{ name }}</h1>
   <h2>{{ price }} €/kg</h2>
 </router-link>

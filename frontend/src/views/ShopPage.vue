@@ -1,8 +1,8 @@
 <template>
   <NavBar/>
-  <div>
-    <ProductListItem v-for="(product, index) of products" :key="index" :name="product.name" :price="product.price" :path="product.path"/>
-  </div>
+    <div>
+      <ProductListItem v-for="(product, index) of products" :key="index" :name="product.name" :price="product.price" :path="product.path"/>
+    </div>
 </template>
 <script>
 import NavBar from "@/components/NavBar.vue";

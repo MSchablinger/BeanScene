@@ -17,6 +17,9 @@ const routes = [
     {
         path: "/detail",
         name: "ProductDetail",
+        props: {
+            id: route => ({query: route.query.id})
+        },
         component: ProductDetail
     }
 ]
