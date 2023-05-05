@@ -22,15 +22,11 @@ main {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
   display: grid;
   grid-template-areas:
-  ". . ."
   ". . .";
-  width: 85%;
-  height: 12%;
-  color:#fff;
+  width: 87%;
+  height: 20%;
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  padding-top: 5%;
-  padding-left: 5%;
-  padding-bottom: 5%;
 }
 </style>

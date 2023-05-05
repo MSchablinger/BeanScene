@@ -28,9 +28,10 @@ export default {
   scroll-snap-align: center;
 }
 #shop-widget {
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-top: 15%;
+  margin-bottom: 15%;
   scroll-snap-align: center;
+  padding: 2% 2% 2% 2%;
 }
 #wrapper {
   background-color: #F3E5BC;
@@ -42,6 +43,7 @@ export default {
   scroll-snap-type: y mandatory;
 }
 main {
+  padding: 0px;
   height: 100%;
 }
 </style>

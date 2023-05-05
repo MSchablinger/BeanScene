@@ -1,5 +1,5 @@
 <template>
-<router-link to="/detail">
+<router-link :to="'/detail?'+id" >
   <img :src="'http://'+ip+'/BeanScene/backend/' + path" alt="">
   <h1>{{ name }}</h1>
   <h2>{{ price }} €/kg</h2>

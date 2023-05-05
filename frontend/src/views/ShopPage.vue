@@ -1,7 +1,7 @@
 <template>
   <NavBar/>
     <div>
-      <ProductListItem v-for="(product, index) of products" :key="index" :name="product.name" :price="product.price" :path="product.path"/>
+      <ProductListItem v-for="product in products" :key="product.id" :id="product.id" :name="product.name" :price="product.price" :path="product.path"/>
     </div>
 </template>
 <script>
@@ -20,7 +20,7 @@ export default {
       fetch('http://' + ip + '/BeanScene/backend/product.php')
           .then(response => response.json())
           .then(data => {
-            products.value = data.products
+            products.value = data
           })
     })
 
