@@ -1,5 +1,5 @@
 <template>
-<router-link :to="'/detail?'+id" >
+<router-link :to="{ name: 'ProductDetail', params: { id: 1 } }">
   <img :src="'http://'+ip+'/BeanScene/backend/' + path" alt="">
   <h1>{{ name }}</h1>
   <h2>{{ price }} €/kg</h2>
@@ -10,7 +10,7 @@
 export default {
   name: "ProductListItem",
   props: {
-    id: Number,
+    prodId: Number,
     name: String,
     price: Number,
     path: String

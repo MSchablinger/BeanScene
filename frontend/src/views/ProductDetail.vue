@@ -2,7 +2,8 @@
   <NavBar/>
   <main>
     <div>
-      <img :src="'http://'+ip+'/BeanScene/backend/' + path" alt="">
+      {{products}}
+      <img :src="'http://'+ip+'/BeanScene/backend/' + products[id - 1].path" alt="">
       <h1>{{ products[id - 1].name }}</h1>
       <h2>{{ products[id - 1].price }} €/kg</h2>
     </div>
@@ -13,17 +14,20 @@
 <script defer>
 import NavBar from "@/components/NavBar.vue";
 import { onMounted, ref } from 'vue'
+import {  useRoute } from 'vue-router';
 
 export default {
   name: 'ProductDetail',
   components: {NavBar},
-  props: {
-    id: Number
+  computed: {
+    id() {
+      const route = useRoute();
+      return route.params.id;
+    }
   },
   setup() {
     const products = ref([])
     const ip = self.location.hostname;
-
     onMounted(() => {
       fetch('http://' + ip + '/BeanScene/backend/product.php')
           .then(response => response.json())

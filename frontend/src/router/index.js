@@ -10,16 +10,13 @@ const routes = [
         component: LandingPage,
     },
     {
-        path: "/shop",
+        path: "/shop/",
         name: "Shop",
         component: ShopPage
     },
     {
-        path: "/detail",
+        path: "/detail/",
         name: "ProductDetail",
-        props: {
-            id: route => ({query: route.query.id})
-        },
         component: ProductDetail
     }
 ]
